@@ -21,10 +21,24 @@ struct Employee
     double salary;
 };
 
+/**
+ * Loads input file into a vector of structures
+ * @return vector of structures 
+*/
 vector <Employee> loadData ();
 
+/**
+ * Prints the results
+ * @param employee vector that stores structures
+ * @param total_payroll total dollars in payroll
+*/
 void printReport (vector <Employee> employee, double total_payroll);
 
+/**
+ * Finds the total price of the pizza log data
+ * @param employee vector that stores structures
+ * @return returns total payroll of all employees
+*/
 double totalPayroll (vector <Employee> employee);
 
 int main(int argc, char const *argv[]) {
